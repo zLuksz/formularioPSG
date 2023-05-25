@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    
+    <section class="formulario">
+        <form action="">
+            <div class="idade">
+                <label for="">Sua Idade:</label>
+                <input type="date" id="idade">
+            </div>
+            <div class="renda">
+                <label for="">Renda Per Capita Familiar:</label>
+                <input type="number" id="renda">
+            </div>
+            <div class="pessoas">
+                <label for="">Quantidade De Pessoas Na Casa:</label>
+                <input type="number" id="pessoas">
+            </div>
+            <div class="cursos">
+                <p>Curso 001 - Administrador De Banco De Dados</p>
+                <p>Curso 002 - Programador De Sistemas</p>
+                <p>Curso 003 - Desenvolvedor WEB</p>
+                <input type="text" id="cursos">
+            </div>
+        </form>
+        <button id="cadastrarcursos" onclick="cadastrocursos()">Me Cadastrar</button>
+        <div id="mostrarcurso"></div>
+    </section>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
