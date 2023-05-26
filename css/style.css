@@ -57,9 +57,27 @@
 #mostrarcurso {
     color: #eee;
     background-color: green;
-    border-top: 2px solid #000;
-    border-bottom: 2px solid #000;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
     margin-top: 15px;
     font-size: 35px;
     transition: 1s;
+}
+
+#mostrarcursopreencher {
+    color: #3f3f3f;
+    border-bottom: 1px solid #000;
+    font-size: 35px;
+}
+
+#mostrarcurserro {
+    color: #eee;
+    border-bottom: 1px solid #000;
+    font-size: 35px;
+}
+
+#mostrarcursoidade {
+    color: #eee;
+    border-bottom: 1px solid #000;
+    font-size: 35px;
 }
