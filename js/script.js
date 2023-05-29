@@ -67,3 +67,17 @@ function cadastrocursos() {
         document.getElementById('mostrarcursopreencher').innerHTML = ('Preencha todos os campos.')
     }
 }
+
+
+function media_alunos() {
+    let nota1 = document.getElementById('nota1').value;
+    let nota2 = document.getElementById('nota2').value;
+    let nota3 = document.getElementById('nota3').value;
+    media_ponderada = ((nota1 + nota2 + nota3) / 3).toFixed(2);
+    
+    return media_ponderada;
+}
+
+function situacao_aluno() {
+    
+}

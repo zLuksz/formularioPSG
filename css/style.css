@@ -33,17 +33,24 @@ a {
 
 .cabecalho ul li a {
     color: #eee;
-    background-color: #da3925;
+    background-color: #e08600;
     padding: 10px;
     border-radius: 1rem;
-    border-bottom: 2px solid #eee;
 }
 
 .cabecalho ul li a:hover {
     color: #eee;
-    background-color: #0082ba;
-    border-bottom: 2px solid #000;
+    background-color: #575757;
     transition: 0.6s;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabecalho .list li {
+    padding: 20px;
 }
 
 .formulario {
@@ -135,6 +142,115 @@ a {
     font-size: 35px;
 }
 
-.input select {
-    margin-bottom: 10px;
+.main {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10px;
+    display: block;
+}
+.main h2 {
+    font-size: 25px;
+}
+
+.card {
+    margin: 10px;
+    padding: 10px;
+}
+
+.table {
+    padding: 50px;
+}
+
+.table h2 {
+    background-color: #e08600;
+    width: 130px;
+    border-radius: 1rem;
+    padding: 5px;
+}
+
+.table h4 {
+    text-decoration: underline;
+}
+
+.table table {
+    border: none;
+    border: ridge;
+    background-color: #eee;
+    font-size: 19px;
+    text-align: center;
+}
+
+.table table tr {
+    border: 1px ridge #000;
+}
+
+.table table tr th{
+    border: 1px ridge #000;
+    background-color: #aaaaaa;
+}
+
+.table table tr td{
+    border: 1px ridge #000;
+}
+
+.footer {
+    background-color: #014ba0;
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+.footerlist {
+    padding: 20px;
+}
+
+.footerlist h2 {
+    background-color: #e08600;
+    color: #fff;
+    border-radius: 5rem;
+    padding: 5px;
+}
+
+.notaalunos {
+    padding: 30px;
+}
+
+.notaalunos input{
+    border-radius: 2rem;
+    padding-left: 2px;
+    border: none;
+    margin: 10px;
+    padding: 5px;
+    filter: drop-shadow(1px 1px 1px);
+}
+.notaalunos {
+    font-size: 25px;
+    margin: 2%;
+    color: #fff;
+    border-radius: 2rem;
+    text-align: center;
+    background-color: #e08600;
+}
+
+.sitauacaoaluno {
+    margin-top: 20px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.cards {
+    padding: 15px;
+    background-color: #1C4C96;
+    margin: 5px;
+    border: 1px solid #eee;
+    border-radius: 1rem;
+}
+
+.cards h3 {
+    background-color: #0082ba;
+    border-radius: 2rem;
+    padding: 5px;
+    filter: drop-shadow(1px 1px 1px);
 }

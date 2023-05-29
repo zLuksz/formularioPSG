@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="/img/logo.png" alt="">
+        <ul class="list">
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="">Pré-Matricula</a></li>
+        </ul>
+    </header>
+    <section class="formulario">
+        <h2>Cadastro De Cursos PSGs</h2>
+        <form action="/action_page.php" class="was-validated needs-validation">
+            <div class="input">
+                <label for="nomealuno">Informe Seu Nome:</label>
+                <input type="text" id="nomealuno" required>
+                <div class="invalid-feedback">Necessario Informar Seu Nome:</div>
+            </div>
+            <div class="input">
+                <label for="idade">Sua Idade:</label>
+                <input type="date" id="idade" required>
+                <div class="invalid-feedback">Necessario Informar Sua Data De Nascimento.</div>
+            </div>
+            <div class="input">
+                <label for="renda">Renda Per Capita Familiar:</label>
+                <input type="number" id="renda" required>
+                <div class="invalid-feedback">Necessario Informar Sua Renda Per Capita.</div>
+            </div>
+            <div class="input">
+                <label for="pessoas">Quantidade De Pessoas Na Casa:</label>
+                <input type="number" id="pessoas" required>
+                <div class="invalid-feedback">Necessario Informar A Quantidade De Residentes Em Sua Casa.</div>
+            </div>
+            <div class="input">
+                <label for="">Escolha O Curso Que Queria Cursar.</label>
+                <select id="cursos" class="form-select" aria-label="Default select example">
+                    <option selected>Abrir Lista De Cursos</option>
+                    <option value="1">Administrador De Banco De Dados</option>
+                    <option value="2">Programador De Sistemas</option>
+                    <option value="3">Logica De Programação</option>
+                    <option value="4">UX/UI Design</option>
+                    <option value="5">Tecnico De Informatica</option>
+                    <option value="6">Programador Web</option>
+                  </select>
+            </div>
+        </form>
+        <button type="button" id="cadastrarcursos" onclick="cadastrocursos()">Me Cadastrar</button>
+        <div id="mostrarcurso"></div>
+        <div id="mostrarcursopreencher"></div>
+        <div id="mostrarcurserro"></div>
+        <div id="mostrarcursoidade"></div>
+    </section>
+
+<script src="/js/bootstrap.bundle.min.js"></script>
+<script src="/js/script.js"></script>
+</body>
+</html>

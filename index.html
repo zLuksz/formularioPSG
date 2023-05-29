@@ -10,55 +10,162 @@
 </head>
 <body>
     <header class="cabecalho">
-        <img src="img/logo.png" alt="">
-        <ul>
-            <li><a href="">Inicio</a></li>
+        <img src="img/logosenac-transp.png" alt="">
+        <ul class="list">
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="./pages/pagina1.html">Pré-Matricula</a></li>
         </ul>
     </header>
-    <section class="formulario">
-        <h2>Cadastro De Cursos PSGs</h2>
-        <form action="/action_page.php" class="was-validated needs-validation">
-            <div class="input">
-                <label for="nomealuno">Informe Seu Nome:</label>
-                <input type="text" id="nomealuno" required>
-                <div class="invalid-feedback">Necessario Informar Seu Nome:</div>
-            </div>
-            <div class="input">
-                <label for="idade">Sua Idade:</label>
-                <input type="date" id="idade" required>
-                <div class="invalid-feedback">Necessario Informar Sua Data De Nascimento.</div>
-            </div>
-            <div class="input">
-                <label for="renda">Renda Per Capita Familiar:</label>
-                <input type="number" id="renda" required>
-                <div class="invalid-feedback">Necessario Informar Sua Renda Per Capita.</div>
-            </div>
-            <div class="input">
-                <label for="pessoas">Quantidade De Pessoas Na Casa:</label>
-                <input type="number" id="pessoas" required>
-                <div class="invalid-feedback">Necessario Informar A Quantidade De Residentes Em Sua Casa.</div>
-            </div>
-            <div class="input">
-                <label for="">Escolha O Curso Que Queria Cursar.</label>
-                <select id="cursos" class="form-select" aria-label="Default select example">
-                    <option selected>Abrir Lista De Cursos</option>
-                    <option value="1">Administrador De Banco De Dados</option>
-                    <option value="2">Programador De Sistemas</option>
-                    <option value="3">Logica De Programação</option>
-                    <option value="4">UX/UI Design</option>
-                    <option value="5">Tecnico De Informatica</option>
-                    <option value="6">Programador Web</option>
-                  </select>
-            </div>
-        </form>
-        <button type="button" id="cadastrarcursos" onclick="cadastrocursos()">Me Cadastrar</button>
-        <div id="mostrarcurso"></div>
-        <div id="mostrarcursopreencher"></div>
-        <div id="mostrarcurserro"></div>
-        <div id="mostrarcursoidade"></div>
+    <main class="main">
+        <h1><a href="#cursos">Quem Somos?</a></h1>
+        <div class="card">
+            <h2>Somos</h2>
+            <p>O Serviço Nacional de Aprendizagem Comercial, Senac, é uma instituição de Educação Profissional que foi criada em 10 de janeiro de 1946. De direito privado e sem fins lucrativos, a empresa é mantida por empresários do comércio de bens, serviços e turismo.<p> A missão do Senac é ‘Educar para o trabalho em atividades de comércio de bens, serviços e turismo’.</p><p> O Senac em Goiás desenvolve suas ações desde 18 de setembro de 1947. Desde a sua criação, a disponibiliza cursos de educação profissional focados na capacitação e aperfeiçoamento do cidadão, e sempre aliados ao desenvolvimento do Estado.</p><p> Em mais de sete décadas dedicadas à educação, o Senac tem orgulho de ter atendido a população goiana em diversas modalidades de cursos livres, técnicos, de extensão, de graduação e pós-graduação, presencial e à distância. A instituição desenvolve também atendimento específico para empresas, o Atendimento Corporativo, com simpósios, palestras, seminários, workshops e oficinas customizadas, conforme a necessidade e particularidade de cada organização.</p>
+        </div>
+        <div class="card">
+            <h5><strong>Escolas</strong></h5>
+            <p>Os cursos do Senac são criados mediante um planejamento detalhado, que avalia e envolve as demandas de mercado e o interesse do público, tendo sempre em vista o desenvolvimento da economia e do Estado. Assim, além dos cursos oferecidos nos mais diversos segmentos da economia, a instituição conta com as escolas de Gastronomia, Moda e Idiomas. Cada escola oferece variadas formações para o aluno que deseja se profissionalizar naquela área.</p><p> A Escola de Gastronomia conta com 8 cursos que propiciam ao aluno o desenvolvimento de competências para atuar na gestão, operação e produção em empreendimentos de alimentação e bebidas.</p><p> A Escola de Moda oferece 10 cursos que preparam o aluno para o ramo, que exige cada vez mais criatividade, curiosidade, pesquisa de mercado, visão competitiva e qualificação.</p><p> Já a Escola de Idiomas oferece as formações em Inglês, Francês, Espanhol e Alemão. Ao todo, estão disponíveis 101 turmas que contemplam diferentes idades e níveis de conhecimento.</p>
+        </div>
+        <div class="card">
+            <h5><strong>Banco de Oportunidades</strong></h5>
+            <p>Além de educação de qualidade, o Senac oferece à comunidade o Banco de Oportunidades. A ação consiste em beneficiar diretamente as empresas do comércio e os alunos e ex-alunos da instituição. O Banco de Oportunidades recebe as vagas de emprego nas empresas do comércio de bens, serviços e turismo, e envia os currículos dos alunos e ex-alunos, fazendo esta ponte e colaborando, assim, para o fomento da economia. Para enviar o currículo, basta ser aluno ou ex-aluno de um curso de, no mínimo, 20 horas.</p>
+        </div>
+        <div class="card">
+            <h5><strong>Unidades</strong></h5>
+            <p>Atualmente, o Senac conta com 19 unidades educacionais: uma unidade móvel que está em Quirinópolis, três unidades em Goiânia – Senac Cora Coralina (Faculdade Senac), próximo à Praça da Bíblia; Senac Elias Bufáiçal, no Setor Aeroporto; e Senac Santa Genoveva; e unidades fixas nas cidades de Aparecida de Goiânia (Jardim Luz), Anápolis, Caldas Novas, Catalão, Ceres, Goiânia (Santa Genoveva), Iporá, Ipameri, Itaberaí, Itumbiara, Jataí, Luziânia, Mineiros, Porangatu, Quirinópolis, Rio Verde e Trindade – que será inaugurada no segundo semestre de 2020.</p><p> Missão Institucional.</p><p> Educar para o trabalho em atividades do comércio de bens, serviços e turismo.</p><p> Visão de futuro;</p><p> Ser a instituição brasileira que oferece as melhores soluções em educação profissional, reconhecida pelas empresas por meio da qualidade dos seus alunos.</p><p> Negócio do Senac Goiás.</p><p> Educar profissionais para a VIDA!</p><p> Valores do Regional. <br> •Ética <br> • Qualidade <br> • Trabalho em Equipe <br>• Desenvolvimento <br>• Inovação</p>
+        </div>
+    </main>
+    <section class="table">
+        <h1><a href="#cursos">Cursos</a></h1>
+        <h2>Unidade</h2>
+        <h4>CEP CORA CORALINA</h4>
+        <table>
+            <tr>
+              <th>Curso</th>
+              <th>Carga Horária</th>
+              <th>Tipo de Ensino</th>
+              <th>Turno</th>
+              <th>Local Matricula</th>
+              <th>Tipo de Curso</th>
+              <th>Pré-Rquisito</th>
+              <th>Vagas</th>
+            </tr>
+            <tr>
+              <td>Informática Fundamental (Vagas exclusivas para OVG – Tecendo o Futuro)</td>
+              <td>60</td>
+              <td>Presencial</td>
+              <td>Matutino e Vespertino</td>
+              <td>Na Unidade ou na OVG – Tecendo o Futuro</td>
+              <td>Aperfeiçoamento/ Atualização</td>
+              <td>12 anos e Ensino Fundamental Incompleto</td>
+              <td>40</td>
+            </tr>
+            <tr>
+              <td>Fundamentos de Python I (Vagas exclusivas para alunos da CISCO)</td>
+              <td>30</td>
+              <td>Atendimento Remoto</td>
+              <td>Vespertino</td>
+              <td>Na Unidade</td>
+              <td>Aperfeiçoamento/ Atualização</td>
+              <td>15 anos e Ensino Fundamental Incompleto</td>
+              <td>100</td>
+            </tr>
+            <tr>
+              <td>Desenvolvedor WEB Front-End</td>
+              <td>108</td>
+              <td>Presencial</td>
+              <td>Noturno</td>
+              <td>Na Unidade ou na OVG – Tecendo o Futuro</td>
+              <td>Aperfeiçoamento/ Atualização</td>
+              <td>15 anos e Ensino Fundamental Incompleto</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>Assistente Administrativo (Vagas exclusivas para OVG – Tecendo o Futuro)</td>
+              <td>160</td>
+              <td>Presencial</td>
+              <td>Matutino e Vespertino</td>
+              <td>Na Unidade ou na OVG – Tecendo o Futuro</td>
+              <td>Qualificação profissional</td>
+              <td>16 anos e Ensino Médio Incompleto</td>
+              <td>40</td>
+            </tr>
+            <tr>
+              <td>Operador de Computador (Vagas exclusivas para OVG – Tecendo o Futuro)</td>
+              <td>196</td>
+              <td>Presencial</td>
+              <td>Matutino e Vespertino</td>
+              <td>Na Unidade ou na OVG – Tecendo o Futuro</td>
+              <td>Qualificação profissional</td>
+              <td>15 anos e Ensino Médio Incompleto</td>
+              <td>40</td>
+            </tr>
+            <tr>
+              <td>Administrador de Banco de Dados</td>
+              <td>200</td>
+              <td>Presencial</td>
+              <td>Matutino</td>
+              <td>Na Unidade ou no Site Senac GO</td>
+              <td>Qualificação profissional</td>
+              <td>15 anos e Ensino Médio Incompleto</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>Programador de Sistemas</td>
+              <td>200</td>
+              <td>Presencial</td>
+              <td>Matutino</td>
+              <td>Na Unidade ou no Site Senac GO</td>
+              <td>Qualificação profissional</td>
+              <td>16 anos e Ensino Médio Incompleto</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td>Instalador de Sistemas Eletroeletrônicos e CFTV</td>
+              <td>200</td>
+              <td>Presencial</td>
+              <td>Matutino</td>
+              <td>Na Unidade ou no Site Senac GO</td>
+              <td>Qualificação profissional</td>
+              <td>16 anos e Ensino Médio Incompleto</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>Técnico em Administração</td>
+              <td>1.000</td>
+              <td>Presencial</td>
+              <td>Matutino</td>
+              <td>Na Unidade ou no Site Senac GO</td>
+              <td>Habilitação Técnica de nível Médio</td>
+              <td>16 anos e cursando o 2o ano do Ensino Médio (mínimo)</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td>Técnico em Informática</td>
+              <td>1.200</td>
+              <td>Presencial</td>
+              <td>Matutino</td>
+              <td>Na Unidade ou no Site Senac GO</td>
+              <td>Habilitação Técnica de nível Médio</td>
+              <td>15 anos e cursando o 2o ano do Ensino Médio (mínimo)</td>
+              <td>25</td>
+            </tr>
+          </table>
     </section>
-
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/script.js"></script>
+
+
+<footer class="footer">
+        <div class="footerlist">
+            <h2>Localização</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30579.614459118107!2d-49.253839259074724!3d-16.654259592630176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef250d5f74183%3A0x78e6118444fcfc2e!2sFaculdade%20Senac%20Goi%C3%A1s%20-%20Sede!5e0!3m2!1spt-BR!2sbr!4v1685385679034!5m2!1spt-BR!2sbr" width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="footerlist">
+            <h2>Contatos</h2>
+            <p>Número: (62) 3219-5180</p>
+            <p>E-mail: atendimento@go.senac.br</p>
+        </div>
+</footer>
 </body>
 </html>
