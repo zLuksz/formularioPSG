@@ -79,5 +79,27 @@ function media_alunos() {
 }
 
 function situacao_aluno() {
-    
+    let veio = document.getElementsByClassName('vieram');
+    let vieram = 0.0;
+
+    for (let index = 0; index < veio.length; index++) {
+        if (veio[index].checked == true) {
+            vieram += parseFloat(veio[index].value);
+        }
+    }
+    percentual = (vieram / 12).toFixed(2);
+
+    return percentual;
+}
+
+function calcular() {
+    if (media_alunos() == 0.0 || situacao_aluno() == 0.0) {
+        document.getElementById('calculofeito').innerHTML = ('Insira Alguma Opção Acima')
+        return;
+    }
+    if (media_alunos() >= 6.0 && situacao_aluno() >= 75.0) {
+        document.getElementById('calculofeito').innerHTML = ('Este Aluno Esta Aprovado')
+    } else {
+        document.getElementById('calculofeito').innerHTML = ('Este Aluno Esta Reprovado')
+    }
 }

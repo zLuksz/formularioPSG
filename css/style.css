@@ -254,3 +254,18 @@ a {
     padding: 5px;
     filter: drop-shadow(1px 1px 1px);
 }
+
+.btncalcular {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 1rem;
+    background-color: #0082ba;
+    color: #fff;
+    border: 1px solid #014ba0;
+}
+
+.btncalcular:hover {
+    color: #000;
+    background-color: #0082ba;
+    filter: drop-shadow(1px 1px 1px);
+}
