@@ -93,13 +93,17 @@ function situacao_aluno() {
 }
 
 function calcular() {
+    if (media_alunos() < 0) {
+        document.getElementById('calculofeito').innerHTML = ('Insira Um Valor Valido Nas Notas!')
+        return;
+    }
     if (media_alunos() == 0.0 || situacao_aluno() == 0.0) {
-        document.getElementById('calculofeito').innerHTML = ('Insira Alguma Opção Acima')
+        document.getElementById('calculofeito').innerHTML = ('Insira Mais De Uma Opção Acima')
         return;
     }
     if (media_alunos() >= 6.0 && situacao_aluno() >= 75.0) {
-        document.getElementById('calculofeito').innerHTML = ('Este Aluno Esta Aprovado')
+        document.getElementById('calculofeito').innerHTML = ('Parabéns!!! Este Aluno Esta Aprovado')
     } else {
-        document.getElementById('calculofeito').innerHTML = ('Este Aluno Esta Reprovado')
+        document.getElementById('calculofeito').innerHTML = ('Não Foi Desta Vez!!! Este Aluno Esta Reprovado')
     }
 }
