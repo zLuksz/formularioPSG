@@ -9,7 +9,7 @@
 }
 
 a {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .cabecalho {
@@ -36,6 +36,7 @@ a {
     background-color: #e08600;
     padding: 10px;
     border-radius: 1rem;
+    text-decoration: none;
 }
 
 .cabecalho ul li a:hover {
@@ -268,4 +269,61 @@ a {
     color: #000;
     background-color: #0082ba;
     filter: drop-shadow(1px 1px 1px);
+}
+
+.main a {
+    text-decoration: none;
+}
+
+.table a {
+    text-decoration: none;
+}
+
+@media (max-width: 900px) {
+    .cabecalho {
+        display: flex;
+        flex-direction: column;
+    }
+    .cabecalho img {
+        align-self: center;
+        width: 50%;
+    }
+    .list {
+        display: block;
+        text-align: center;
+    }
+    .main {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .table {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 0;
+    }
+    .table table tr {
+        display: flex;
+        flex-direction: column;
+    }
+    .table table tr th {
+        font-size: 15px;
+    }
+    .table table tr td {
+        font-size: 15px;
+    }
+    .footer {
+        display: block;
+    }
+    .footer iframe {
+        width: 300px;
+    }
+    .formulario {
+        margin: 0;
+    }
+    .formulario form {
+        margin: 20px;
+    }
+    .sitauacaoaluno {
+        display: block;
+    }
 }
