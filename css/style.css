@@ -8,6 +8,19 @@
     text-decoration: none;
 }
 
+body::-webkit-scrollbar {
+    width: 10px;
+}
+  
+body::-webkit-scrollbar-track {
+    background: #0069c0;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #e9791a;
+    border-radius: 1rem 0rem 0rem 1rem;
+}
+
 a {
     text-decoration: underline;
 }
@@ -15,7 +28,7 @@ a {
 .cabecalho {
     display: flex;
     justify-content: space-between;
-    background-color: #1C4C96;
+    background-color: #0069c0;
     align-items: center;
     filter: drop-shadow(0px 0px 5px);
 }
@@ -33,7 +46,7 @@ a {
 
 .cabecalho ul li a {
     color: #eee;
-    background-color: #e08600;
+    background-color: #e9791a;
     padding: 10px;
     border-radius: 1rem;
     text-decoration: none;
@@ -41,7 +54,7 @@ a {
 
 .cabecalho ul li a:hover {
     color: #eee;
-    background-color: #575757;
+    background-color: #2196f3;
     transition: 0.6s;
 }
 
@@ -61,13 +74,13 @@ a {
     text-align: center;
     margin-left: 20%;
     margin-right: 20%;
-    border: 2px inset #0082ba;
+    border: 2px inset #0069c0;
     background-color: #eee;
     box-shadow: 0px 5px 6px 5px rgba(17, 51, 59, 0.2);
 }
 
 .formulario h2 {
-    background-color: #014ba0;
+    background-color: #15297c;
     color: #eee;
     border-radius: 0 0 10rem 10rem;
 }
@@ -81,7 +94,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background-color: #014ba0;
+    background-color: #15297c;
     border-radius: 2rem;
     filter: drop-shadow(1px 3px 3px);
     color: #eee;
@@ -101,7 +114,7 @@ a {
     margin-top: 20px;
     font-size: 25px;
     color: #eee;
-    background-color: #014ba0;
+    background-color: #e9791a;
     padding: 10px;
     border-radius: 1rem;
     cursor: pointer;
@@ -109,7 +122,7 @@ a {
 }
 
 .formulario button:hover {
-    background-color: #37ef;
+    background-color: #2196f3;
     color: #f1f1f1;
     filter: drop-shadow(1px 5px 1px);
     transition: 1s;
@@ -195,7 +208,7 @@ a {
 }
 
 .footer {
-    background-color: #014ba0;
+    background-color: #0069c0;
     color: #fff;
     justify-content: center;
     text-align: center;
@@ -207,7 +220,7 @@ a {
 }
 
 .footerlist h2 {
-    background-color: #e08600;
+    background-color: #e9791a;
     color: #fff;
     border-radius: 5rem;
     padding: 5px;
@@ -227,11 +240,13 @@ a {
 }
 .notaalunos {
     font-size: 25px;
-    margin: 2%;
+    margin: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
     color: #fff;
     border-radius: 2rem;
     text-align: center;
-    background-color: #e08600;
+    background-color: #072f4e;
 }
 
 .sitauacaoaluno {
@@ -242,15 +257,30 @@ a {
 }
 
 .cards {
-    padding: 15px;
+    padding: 5px;
     background-color: #1C4C96;
     margin: 5px;
-    border: 1px solid #eee;
+    border: 1px solid #2898ee;
     border-radius: 1rem;
 }
 
+.cards input[type="radio"]{
+    -webkit-appearance: none;
+    background-color: #e9791a;
+    text-align: center;
+    margin: 5px;
+    width: 25px;
+    height: 10px;
+    border-radius: 1rem;
+    border: 1px solid #072f4e;
+}
+
+.cards input[type="radio"]:checked{
+    background-color: #15297c;
+}
+
 .cards h3 {
-    background-color: #0082ba;
+    background-color: #e9791a;
     border-radius: 2rem;
     padding: 5px;
     filter: drop-shadow(1px 1px 1px);
@@ -260,14 +290,15 @@ a {
     margin-top: 10px;
     padding: 10px;
     border-radius: 1rem;
-    background-color: #0082ba;
+    background-color: #e9791a;
     color: #fff;
-    border: 1px solid #014ba0;
+    border: none;
 }
 
 .btncalcular:hover {
-    color: #000;
-    background-color: #0082ba;
+    color: #fff;
+    background-color: #2196f3;
+    transition: 0.6s;
     filter: drop-shadow(1px 1px 1px);
 }
 
@@ -325,5 +356,9 @@ a {
     }
     .sitauacaoaluno {
         display: block;
+    }
+    .notaalunos {
+        margin: 0;
+        border-radius: 0;
     }
 }
