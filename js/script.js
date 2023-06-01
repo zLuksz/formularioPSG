@@ -70,9 +70,9 @@ function cadastrocursos() {
 
 
 function media_alunos() {
-    let nota1 = document.getElementById('nota1').value;
-    let nota2 = document.getElementById('nota2').value;
-    let nota3 = document.getElementById('nota3').value;
+    let nota1 = parseFloat(document.getElementById('nota1').value);
+    let nota2 = parseFloat(document.getElementById('nota2').value);
+    let nota3 = parseFloat(document.getElementById('nota3').value);
     media_ponderada = ((nota1 + nota2 + nota3) / 3).toFixed(2);
     
     return media_ponderada;
@@ -86,24 +86,46 @@ function situacao_aluno() {
         if (veio[index].checked == true) {
             vieram += parseFloat(veio[index].value);
         }
-    }
+    } 
+  
     percentual = (vieram / 12).toFixed(2);
 
     return percentual;
 }
 
-function calcular() {
+function calcular() { 
+    let nveio = document.getElementsByClassName('naoveio');
+    let nvieram = 0
+    for (let index = 0; index < nveio.length; index++) {
+        if (nveio[index].checked == true) {
+            nvieram ++
+        }
+    }
+    
+    nveio = ((nvieram / 12) * 100)
+
+    console.log(nveio,situacao_aluno())
+    
+    console.log(media_alunos())
     if (media_alunos() < 0) {
         document.getElementById('calculofeito').innerHTML = ('Insira Um Valor Valido Nas Notas!')
         return;
     }
-    if (media_alunos() == 0.0 || situacao_aluno() == 0.0) {
-        document.getElementById('calculofeito').innerHTML = ('Insira Mais De Uma Opção Acima')
+    if (media_alunos() == 'NaN'|| parseFloat(situacao_aluno()) +((nvieram / 12) * 100) !=100 ) {
+        document.getElementById('calculofeito').innerHTML = ('Todos Os Campos São Obrigatorios!!!')
         return;
     }
+
+
     if (media_alunos() >= 6.0 && situacao_aluno() >= 75.0) {
-        document.getElementById('calculofeito').innerHTML = ('Parabéns!!! Este Aluno Esta Aprovado')
+        document.getElementById('calculofeito').innerHTML = ('Parabéns!!! Este Aluno Esta Aprovado.')
+        return
+    } 
+    if (media_alunos() >= 5.0 && media_alunos() < 6.0 && situacao_aluno() >= 75.0) {
+        document.getElementById('calculofeito').innerHTML = ('Não Foi Desta Vez!!! Este Aluno Esta Em Recuperação.')
+        return
     } else {
-        document.getElementById('calculofeito').innerHTML = ('Não Foi Desta Vez!!! Este Aluno Esta Reprovado')
+        document.getElementById('calculofeito').innerHTML = ('Não Foi Desta Vez!!! Este Aluno Esta Reprovado.')
+        return
     }
 }
