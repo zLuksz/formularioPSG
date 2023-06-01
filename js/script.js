@@ -111,7 +111,7 @@ function calcular() {
         document.getElementById('calculofeito').innerHTML = ('Insira Um Valor Valido Nas Notas!')
         return;
     }
-    if (media_alunos() == 'NaN'|| parseFloat(situacao_aluno()) +((nvieram / 12) * 100) !=100 ) {
+    if (media_alunos() == 'NaN'|| !(parseFloat(situacao_aluno()) + ((nvieram / 12) * 100) > 98 )) {
         document.getElementById('calculofeito').innerHTML = ('Todos Os Campos São Obrigatorios!!!')
         return;
     }
